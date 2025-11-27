@@ -1,1351 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubham | Business Development & Lead Generation Specialist</title>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --navy-blue: #1e3a8a;
-            --dark-grey: #2d3748;
-            --light-grey: #f7fafc;
-            --white: #ffffff;
-            --accent-blue: #3b82f6;
-            --text-dark: #1a202c;
-            --text-light: #718096;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            color: var(--text-dark);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3, h4, h5 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-        }
-
-        /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            z-index: 1000;
-            padding: 1rem 0;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--navy-blue);
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 500;
-            transition: color 0.3s;
-            font-size: 0.95rem;
-        }
-
-        .nav-links a:hover {
-            color: var(--navy-blue);
-        }
-
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 4px;
-        }
-
-        .menu-toggle span {
-            width: 25px;
-            height: 3px;
-            background: var(--navy-blue);
-            border-radius: 3px;
-            transition: 0.3s;
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            background: linear-gradient(135deg, #f7fafc 0%, #e2e8f0 100%);
-            padding: 8rem 2rem 4rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 50%;
-            height: 100%;
-            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--accent-blue) 100%);
-            opacity: 0.05;
-            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-        }
-
-        .hero-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            color: var(--navy-blue);
-            margin-bottom: 0.5rem;
-            animation: fadeInUp 0.8s ease;
-        }
-
-        .hero-content .title {
-            font-size: 1.3rem;
-            color: var(--dark-grey);
-            margin-bottom: 1rem;
-            font-weight: 500;
-            animation: fadeInUp 0.8s ease 0.2s backwards;
-        }
-
-        .hero-content .experience {
-            color: var(--accent-blue);
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            font-size: 1rem;
-            animation: fadeInUp 0.8s ease 0.3s backwards;
-        }
-
-        .hero-content p {
-            font-size: 1.05rem;
-            color: var(--text-light);
-            margin-bottom: 2rem;
-            line-height: 1.8;
-            animation: fadeInUp 0.8s ease 0.4s backwards;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            animation: fadeInUp 0.8s ease 0.5s backwards;
-        }
-
-        .btn {
-            padding: 0.9rem 2rem;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .btn-primary {
-            background: var(--navy-blue);
-            color: white;
-            box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
-        }
-
-        .btn-primary:hover {
-            background: var(--accent-blue);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(30, 58, 138, 0.4);
-        }
-
-        .btn-secondary {
-            background: white;
-            color: var(--navy-blue);
-            border: 2px solid var(--navy-blue);
-        }
-
-        .btn-secondary:hover {
-            background: var(--navy-blue);
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: var(--dark-grey);
-            border: 2px solid var(--dark-grey);
-        }
-
-        .btn-outline:hover {
-            background: var(--dark-grey);
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        .hero-image {
-            display: flex;
-            justify-content: center;
-            animation: fadeInRight 1s ease;
-        }
-
-        .headshot {
-            width: 350px;
-            height: 350px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--navy-blue), var(--accent-blue));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 20px 60px rgba(30, 58, 138, 0.3);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .headshot::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>') center/60% no-repeat;
-            opacity: 0.3;
-        }
-
-        .headshot img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Section Styles */
-        section {
-            padding: 5rem 2rem;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            color: var(--navy-blue);
-            margin-bottom: 1rem;
-            position: relative;
-            display: inline-block;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 4px;
-            background: var(--accent-blue);
-            border-radius: 2px;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            color: var(--text-light);
-            margin-bottom: 3rem;
-            font-size: 1.1rem;
-        }
-
-        /* About Section */
-        .about {
-            background: white;
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-            margin-top: 3rem;
-        }
-
-        .about-text {
-            animation: fadeInLeft 0.8s ease;
-        }
-
-        .about-text h3 {
-            font-size: 1.8rem;
-            color: var(--navy-blue);
-            margin-bottom: 1rem;
-        }
-
-        .about-text p {
-            color: var(--text-light);
-            font-size: 1.05rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-
-        .quote-box {
-            background: linear-gradient(135deg, var(--navy-blue), var(--accent-blue));
-            padding: 2rem;
-            border-radius: 12px;
-            color: white;
-            position: relative;
-            box-shadow: 0 10px 30px rgba(30, 58, 138, 0.2);
-            animation: fadeInRight 0.8s ease;
-        }
-
-        .quote-box::before {
-            content: '"';
-            font-size: 5rem;
-            position: absolute;
-            top: -10px;
-            left: 20px;
-            opacity: 0.3;
-            font-family: Georgia, serif;
-        }
-
-        .quote-box p {
-            font-size: 1.3rem;
-            font-style: italic;
-            line-height: 1.6;
-            position: relative;
-            z-index: 1;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .stat-card {
-            text-align: center;
-            padding: 2rem;
-            background: var(--light-grey);
-            border-radius: 12px;
-            transition: transform 0.3s;
-        }
-
-        .stat-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .stat-card i {
-            font-size: 2.5rem;
-            color: var(--accent-blue);
-            margin-bottom: 1rem;
-        }
-
-        .stat-card h3 {
-            font-size: 2rem;
-            color: var(--navy-blue);
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-card p {
-            color: var(--text-light);
-        }
-
-        /* Experience Section */
-        .experience {
-            background: var(--light-grey);
-        }
-
-        .timeline {
-            position: relative;
-            max-width: 900px;
-            margin: 3rem auto;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 3px;
-            height: 100%;
-            background: var(--accent-blue);
-        }
-
-        .timeline-item {
-            margin-bottom: 3rem;
-            position: relative;
-            width: 100%;
-        }
-
-        .timeline-item:nth-child(odd) .timeline-content {
-            margin-left: auto;
-            margin-right: 0;
-        }
-
-        .timeline-content {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            width: 45%;
-            position: relative;
-            animation: fadeInUp 0.6s ease;
-        }
-
-        .timeline-item:nth-child(even) .timeline-content {
-            margin-left: 0;
-            margin-right: auto;
-        }
-
-        .timeline-dot {
-            position: absolute;
-            left: 50%;
-            top: 0;
-            transform: translateX(-50%);
-            width: 20px;
-            height: 20px;
-            background: var(--accent-blue);
-            border: 4px solid white;
-            border-radius: 50%;
-            box-shadow: 0 0 0 4px var(--light-grey);
-            z-index: 1;
-        }
-
-        .timeline-content h3 {
-            color: var(--navy-blue);
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .timeline-content .company {
-            color: var(--accent-blue);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .timeline-content .duration {
-            color: var(--text-light);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .timeline-content ul {
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .timeline-content li {
-            color: var(--text-light);
-            margin-bottom: 0.5rem;
-            line-height: 1.6;
-        }
-
-        .tools-used {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        .tool-tag {
-            background: var(--light-grey);
-            padding: 0.4rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            color: var(--dark-grey);
-            font-weight: 500;
-        }
-
-        .achievement-badge {
-            background: linear-gradient(135deg, #fbbf24, #f59e0b);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-top: 1rem;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-
-        /* Skills Section */
-        .skills {
-            background: white;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .skill-card {
-            background: var(--light-grey);
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: center;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--accent-blue);
-            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
-        }
-
-        .skill-card i {
-            font-size: 3rem;
-            color: var(--accent-blue);
-            margin-bottom: 1rem;
-        }
-
-        .skill-card h3 {
-            color: var(--navy-blue);
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-        }
-
-        .skill-card p {
-            color: var(--text-light);
-            font-size: 0.95rem;
-        }
-
-        /* Education Section */
-        .education {
-            background: var(--light-grey);
-        }
-
-        .education-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .education-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            border-left: 4px solid var(--accent-blue);
-            transition: transform 0.3s;
-        }
-
-        .education-card:hover {
-            transform: translateX(10px);
-        }
-
-        .education-card i {
-            font-size: 2.5rem;
-            color: var(--accent-blue);
-            margin-bottom: 1rem;
-        }
-
-        .education-card h3 {
-            color: var(--navy-blue);
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-        }
-
-        .education-card .institution {
-            color: var(--dark-grey);
-            font-weight: 600;
-            margin-bottom: 0.3rem;
-        }
-
-        .education-card .year {
-            color: var(--text-light);
-            font-size: 0.9rem;
-        }
-
-        /* Achievements Section */
-        .achievements {
-            background: white;
-        }
-
-        .achievements-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .achievement-card {
-            background: linear-gradient(135deg, var(--navy-blue), var(--accent-blue));
-            padding: 2rem;
-            border-radius: 12px;
-            color: white;
-            box-shadow: 0 10px 30px rgba(30, 58, 138, 0.3);
-            transition: transform 0.3s;
-        }
-
-        .achievement-card:hover {
-            transform: scale(1.05);
-        }
-
-        .achievement-card i {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            opacity: 0.9;
-        }
-
-        .achievement-card h3 {
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .achievement-card p {
-            opacity: 0.9;
-            line-height: 1.6;
-        }
-
-        /* Contact Section */
-        .contact {
-            background: var(--light-grey);
-        }
-
-        .contact-content {
-            max-width: 800px;
-            margin: 3rem auto;
-            background: white;
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-        }
-
-        .contact-item i {
-            font-size: 1.5rem;
-            color: var(--accent-blue);
-            margin-top: 0.2rem;
-        }
-
-        .contact-item-content h4 {
-            color: var(--navy-blue);
-            margin-bottom: 0.3rem;
-            font-size: 1.1rem;
-        }
-
-        .contact-item-content p {
-            color: var(--text-light);
-        }
-
-        .contact-item-content a {
-            color: var(--text-light);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .contact-item-content a:hover {
-            color: var(--accent-blue);
-        }
-
-        .contact-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--dark-grey);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin-bottom: 1rem;
-        }
-
-        .social-links a {
-            width: 40px;
-            height: 40px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-
-        .social-links a:hover {
-            background: var(--accent-blue);
-            transform: translateY(-3px);
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes fadeInRight {
-            from {
-                opacity: 0;
-                transform: translateX(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Scroll to Top Button */
-        .scroll-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            background: var(--navy-blue);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            font-size: 1.5rem;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s;
-            z-index: 999;
-            box-shadow: 0 5px 20px rgba(30, 58, 138, 0.4);
-        }
-
-        .scroll-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .scroll-top:hover {
-            background: var(--accent-blue);
-            transform: translateY(-5px);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 968px) {
-            .hero-container {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-buttons {
-                justify-content: center;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-
-            .timeline::before {
-                left: 0;
-            }
-
-            .timeline-content {
-                width: calc(100% - 40px);
-                margin-left: 40px !important;
-            }
-
-            .timeline-dot {
-                left: 0;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .nav-links {
-                position: fixed;
-                top: 70px;
-                left: -100%;
-                flex-direction: column;
-                background: white;
-                width: 100%;
-                padding: 2rem;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-                transition: left 0.3s;
-            }
-
-            .nav-links.active {
-                left: 0;
-            }
-
-            .menu-toggle {
-                display: flex;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-
-            .hero-content .title {
-                font-size: 1.1rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .headshot {
-                width: 250px;
-                height: 250px;
-            }
-
-            .btn {
-                padding: 0.8rem 1.5rem;
-                font-size: 0.95rem;
-            }
-
-            .contact-content {
-                padding: 2rem 1.5rem;
-            }
-        }
-    </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Shubham Dixit — Senior Business Development Executive</title>
+<meta name="description" content="Portfolio of Shubham Dixit — Senior Business Development Executive, Lead Generation & Sales Specialist." />
+<style>
+  :root{
+    --bg:#ffffff;
+    --card:#f8fafc;
+    --muted:#6b7280;
+    --navy:#0b2545;
+    --accent:#0f5bb5;
+    --glass: rgba(255,255,255,0.6);
+    --radius:16px;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background: linear-gradient(180deg,#ffffff 0%, #f3f6fb 100%);
+    color:#0f1724;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.5;
+  }
+  header{
+    position:sticky;
+    top:0;
+    z-index:40;
+    backdrop-filter: blur(6px);
+    background: rgba(255,255,255,0.55);
+    border-bottom: 1px solid rgba(15,23,36,0.04);
+  }
+  .container{max-width:1100px;margin:0 auto;padding:28px;}
+  .nav{
+    display:flex;
+    gap:16px;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .brand{
+    display:flex;gap:12px;align-items:center;font-weight:700;color:var(--navy);
+  }
+  .brand .dot{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--accent),#103f7a);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+  nav ul{display:flex;gap:14px;align-items:center;margin:0;padding:0;list-style:none}
+  nav a{color:var(--muted);text-decoration:none;font-size:14px}
+  .cta{display:inline-block;padding:10px 14px;background:var(--accent);color:white;border-radius:10px;font-weight:600;text-decoration:none}
+  /* Hero */
+  .hero{
+    display:grid;
+    grid-template-columns: 1fr 360px;
+    gap:28px;
+    align-items:center;
+    padding:36px 0 56px;
+  }
+  .hero-left h1{font-size:32px;margin:0 0 8px;color:var(--navy)}
+  .title-sub{color:var(--accent);font-weight:600;margin-bottom:12px}
+  .tagline{color:var(--muted);max-width:62ch}
+  .hero-actions{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{padding:10px 14px;border-radius:10px;border:1px solid rgba(15,23,36,0.06);background:white;text-decoration:none;color:var(--navy);font-weight:600}
+  .download{background:transparent;color:var(--navy)}
+  .profile-card{
+    background: linear-gradient(180deg, white, var(--card));
+    padding:18px;border-radius:18px;box-shadow: 0 6px 20px rgba(16,24,40,0.06);text-align:center;
+  }
+  .avatar{
+    width:100px;height:100px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#2b6cb0);display:inline-flex;align-items:center;justify-content:center;color:white;font-size:32px;margin-bottom:12px;
+  }
+  .muted{color:var(--muted)}
+  /* Grid sections */
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  section{margin-bottom:28px}
+  .card{background:white;padding:20px;border-radius:14px;box-shadow:0 6px 18px rgba(12,18,32,0.04)}
+  /* Experience timeline */
+  .timeline{display:flex;flex-direction:column;gap:12px}
+  .timeline-item{display:flex;gap:12px;align-items:flex-start}
+  .timeline-item .marker{width:12px;height:12px;border-radius:4px;background:var(--accent);margin-top:6px}
+  .job{flex:1}
+  .job h4{margin:0 0 4px;font-size:16px;color:var(--navy)}
+  .job .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+  .job ul{margin:0;padding-left:18px;color:var(--muted);font-size:14px}
+  /* Tools grid */
+  .tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+  .tool{background:linear-gradient(180deg,#fff,#fbfcff);padding:12px;border-radius:12px;border:1px solid rgba(15,23,36,0.04);display:flex;align-items:center;gap:12px}
+  .tool svg{width:28px;height:28px;flex-shrink:0}
+  /* Achievements */
+  .badges{display:flex;gap:10px;flex-wrap:wrap}
+  .badge{background:linear-gradient(90deg,#fff,#f6fbff);padding:10px 12px;border-radius:10px;border:1px solid rgba(15,23,36,0.04);font-weight:600;color:var(--navy)}
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+  form input, form textarea{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(15,23,36,0.08);margin-bottom:10px;font-size:14px}
+  form button{padding:11px 14px;border-radius:10px;border:0;background:var(--accent);color:white;font-weight:700}
+  footer{padding:18px 0;color:var(--muted);font-size:14px;text-align:center}
+  /* small screens */
+  @media (max-width:880px){
+    .hero{grid-template-columns:1fr; text-align:left}
+    .profile-card{order:2}
+    .contact-grid{grid-template-columns:1fr}
+    .grid-2{grid-template-columns:1fr}
+  }
+</style>
 </head>
 <body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <div class="dot">SD</div>
+      <div>
+        <div style="font-size:14px">Shubham Dixit</div>
+        <div style="font-size:12px;color:var(--muted)">Senior Business Development Executive</div>
+      </div>
+    </div>
 
-    <!-- Navigation -->
     <nav>
-        <div class="nav-container">
-            <div class="logo">SD</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="cta" href="ShubhamDixit- Resume- updated-27 NOV.docx" download>Download Resume</a></li>
+      </ul>
     </nav>
+  </div>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>Shubham Dixit</h1>
-                <p class="title">Senior Business Development Executive | Lead Generation Specialist</p>
-                <p class="experience"><i class="fas fa-briefcase"></i> 5+ Years of Experience</p>
-                <p>Business Development Specialist with 5+ years of experience in generating high-quality leads across international and domestic markets, setting meetings, nurturing prospects, and collaborating with sales teams to convert clients for IT services and SaaS products.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">
-                        <i class="fas fa-user-tie"></i> Hire Me
-                    </a>
-                    <a href="#" class="btn btn-secondary" download>
-                        <i class="fas fa-download"></i> Download CV
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        <i class="fas fa-envelope"></i> Contact
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="headshot">
-                    <!-- Replace this div with <img src="your-photo.jpg" alt="Shubham Dixit"> -->
-                </div>
-            </div>
+<main class="container">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Shubham Dixit</h1>
+      <div class="title-sub">Senior Business Development Executive — Lead Generation Specialist</div>
+      <p class="tagline">
+        Driving growth through strategic lead generation, appointment setting, and client engagement. 5.5+ years experience across international & domestic markets — SaaS, AI/ML, staffing, and data engineering.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#contact">Contact Me</a>
+        <a class="btn download" href="mailto:dixitshubham75@gmail.com">Email: dixitshubham75@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/shubham-dixit-7b186a198/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <aside class="profile-card">
+      <div class="avatar">SD</div>
+      <div style="font-weight:700;font-size:16px">Shubham Dixit</div>
+      <div class="muted" style="font-size:13px;margin-bottom:10px">Senior Business Development Executive</div>
+      <div style="font-size:14px;margin-bottom:10px">Main Shyam Park, Sahibabad, Ghaziabad, India</div>
+      <div style="display:flex;gap:8px;justify-content:center">
+        <a class="btn" href="tel:+918851617334">Call</a>
+        <a class="btn" href="ShubhamDixit- Resume- updated-27 NOV.docx" download>Download CV</a>
+      </div>
+    </aside>
+  </section>
+
+  <!-- ABOUT & EXPERIENCE -->
+  <section id="about" class="grid-2">
+    <div class="card">
+      <h3>About</h3>
+      <p class="muted">
+        As a Senior Business Development Representative with over 5.5 years of experience, I specialize in lead generation for international and domestic markets. I focus on setting meetings, qualifying prospects, and collaborating with sales teams to convert prospects into long-term customers. I have strong skills in research, outreach (email / LinkedIn / cold call), CRM management, and reporting.
+      </p>
+
+      <h4 style="margin-top:16px">Core Strengths</h4>
+      <ul style="color:var(--muted);padding-left:18px">
+        <li>Lead generation & qualification</li>
+        <li>Appointment setting & pipeline management</li>
+        <li>CRM (HubSpot, Salesforce, Zoho) & reporting</li>
+        <li>Tools: Lusha, Apollo, Sales Navigator, Seamless.ai, GMass</li>
+      </ul>
+    </div>
+
+    <div class="card" id="experience">
+      <h3>Experience (Highlights)</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="marker" aria-hidden></div>
+          <div class="job">
+            <h4>RDSolutions — Senior Business Development Executive</h4>
+            <div class="meta">May 13, 2025 — Present</div>
+            <ul>
+              <li>Lead generation for Web Scraping, Staffing, AI/ML, Data Engineering.</li>
+              <li>Candidate qualification, appointment setting, CRM updates (HubSpot).</li>
+              <li>Promoted product offerings (Intrics, InfoQuest) and maintained pipeline.</li>
+            </ul>
+          </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p class="section-subtitle">Passionate about building relationships and driving business growth</p>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Professional Profile</h3>
-                    <p>I am a results-driven Business Development professional specializing in lead generation, client acquisition, and relationship management. With over 5 years of experience in the IT/Tech industry, I've successfully helped companies expand their market reach and achieve sustainable growth.</p>
-                    <p>My expertise lies in leveraging modern sales tools, implementing strategic outreach campaigns, and converting prospects into long-term partnerships. I thrive in dynamic environments and am passionate about using data-driven approaches to achieve exceptional results.</p>
-                </div>
-                <div class="quote-box">
-                    <p>"All our dreams can come true if we have the courage to pursue them."</p>
-                </div>
-            </div>
-
-            <div class="stats-grid">
-                <div class="stat-card fade-in">
-                    <i class="fas fa-calendar-check"></i>
-                    <h3>5+</h3>
-                    <p>Years of Experience</p>
-                </div>
-                <div class="stat-card fade-in">
-                    <i class="fas fa-handshake"></i>
-                    <h3>100+</h3>
-                    <p>Qualified Leads Generated</p>
-                </div>
-                <div class="stat-card fade-in">
-                    <i class="fas fa-trophy"></i>
-                    <h3>Multiple</h3>
-                    <p>Awards & Recognition</p>
-                </div>
-            </div>
+        <div class="timeline-item">
+          <div class="marker"></div>
+          <div class="job">
+            <h4>NextZen Minds — Senior Business Development Executive</h4>
+            <div class="meta">Jun 12, 2024 — Apr 1, 2025</div>
+            <ul>
+              <li>Generated leads for software dev & staff augmentation; outreach across channels.</li>
+              <li>Account research and handover to sales for closures.</li>
+            </ul>
+          </div>
         </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <p class="section-subtitle">My professional journey and achievements</p>
-
-            <div class="timeline">
-                <!-- NextZen Minds -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content fade-in">
-                        <h3>Senior Business Development Executive</h3>
-                        <p class="company"><i class="fas fa-building"></i> NextZen Minds</p>
-                        <p class="duration"><i class="far fa-calendar-alt"></i> 2024 - Present</p>
-                        <ul>
-                            <li>Lead generation for software development, AI/ML, cloud security, SaaS, and mobile applications</li>
-                            <li>Managing end-to-end business development cycles from prospecting to client onboarding</li>
-                            <li>Executing targeted campaigns across international markets</li>
-                            <li>Collaborating with technical teams to align solutions with client needs</li>
-                        </ul>
-                        <div class="tools-used">
-                            <span class="tool-tag">Lusha</span>
-                            <span class="tool-tag">Apollo</span>
-                            <span class="tool-tag">LinkedIn Sales Navigator</span>
-                            <span class="tool-tag">Salesforce</span>
-                            <span class="tool-tag">Zoho CRM</span>
-                            <span class="tool-tag">Mailchimp</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Recam Solutions -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content fade-in">
-                        <h3>Senior Business Development Executive</h3>
-                        <p class="company"><i class="fas fa-building"></i> Recam Solutions</p>
-                        <p class="duration"><i class="far fa-calendar-alt"></i> 2023 - 2024</p>
-                        <ul>
-                            <li>Lead generation for LMS (Learning Management System) solutions</li>
-                            <li>Designed and executed email marketing campaigns with high engagement rates</li>
-                            <li>Conducted LinkedIn outreach to connect with decision-makers</li>
-                            <li>Utilized CRM tools for pipeline management and follow-ups</li>
-                        </ul>
-                        <div class="tools-used">
-                            <span class="tool-tag">LinkedIn Sales Navigator</span>
-                            <span class="tool-tag">CRM Tools</span>
-                            <span class="tool-tag">Email Marketing</span>
-                            <span class="tool-tag">Data Mining</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ImpactQA -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content fade-in">
-                        <h3>Business Development Executive</h3>
-                        <p class="company"><i class="fas fa-building"></i> ImpactQA</p>
-                        <p class="duration"><i class="far fa-calendar-alt"></i> 2023</p>
-                        <ul>
-                            <li>Lead generation for software testing and QA services</li>
-                            <li>Successfully generated 4 Enterprise Qualified Leads in a single month</li>
-                            <li>Conducted market research and competitive analysis</li>
-                            <li>Built strong relationships with C-level executives</li>
-                        </ul>
-                        <div class="achievement-badge">
-                            <i class="fas fa-award"></i>
-                            Spot Award - 4 Enterprise Qualified Leads
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Polestar IT Solutions -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content fade-in">
-                        <h3>Business Development Representative</h3>
-                        <p class="company"><i class="fas fa-building"></i> Polestar IT Solutions</p>
-                        <p class="duration"><i class="far fa-calendar-alt"></i> 2020 - 2022</p>
-                        <ul>
-                            <li>Lead generation for data analytics, BI consulting, and cloud services</li>
-                            <li>Developed and maintained a robust sales pipeline</li>
-                            <li>Achieved consistent monthly targets and KPIs</li>
-                            <li>Recognized for outstanding performance and dedication</li>
-                        </ul>
-                        <div class="achievement-badge">
-                            <i class="fas fa-certificate"></i>
-                            Certificate of Recognition for Consistent Performance
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <h2 class="section-title">Core Skills</h2>
-            <p class="section-subtitle">Expertise and tools I work with</p>
-
-            <div class="skills-grid">
-                <div class="skill-card fade-in">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Inside Sales</h3>
-                    <p>Strategic sales planning and execution</p>
-                </div>
-                <div class="skill-card fade-in">
-                    <i class="fas fa-magnet"></i>
-                    <h3>Lead Generation</h3>
-                    <p>B2B prospecting and qualification</p>
-                </div>
-                <div class="skill-card fade-in">
-                    <i class="fab fa-linkedin"></i>
-                    <h3>LinkedIn Sales Navigator</h3>
-                    <p>Advanced social selling techniques</p>
-                </div>
-                <div class="skill-card fade-in">
-                    <i class="fas fa-database"></i>
-                    <h3>Data Mining</h3>
-                    <p>Prospect research and enrichment</p>
-                </div>
-                <div class="skill-card fade-in">
-                    <i class="fas fa-tools"></i>
-                    <h3>CRM & Outreach Tools</h3>
-                    <p>Salesforce, Zoho, Mailchimp, Gmass</p>
-                </div>
-                <div class="skill-card fade-in">
-                    <i class="fas fa-bullhorn"></i>
-                    <h3>Campaign Management</h3>
-                    <p>Multi-channel marketing campaigns</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="education" id="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <p class="section-subtitle">Academic background and certifications</p>
-
-            <div class="education-grid">
-                <div class="education-card fade-in">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Bachelor of Commerce (B.Com)</h3>
-                    <p class="institution">MGCGV University</p>
-                    <p class="year">2021</p>
-                </div>
-                <div class="education-card fade-in">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Diploma in Animation</h3>
-                    <p class="institution">Arena Animation</p>
-                    <p class="year">2018 - 2020</p>
-                </div>
-                <div class="education-card fade-in">
-                    <i class="fas fa-school"></i>
-                    <h3>12th & 10th Grade</h3>
-                    <p class="institution">National Public School, Ghaziabad</p>
-                    <p class="year">Completed</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section class="achievements" id="achievements">
-        <div class="container">
-            <h2 class="section-title">Achievements</h2>
-            <p class="section-subtitle">Recognition and milestones</p>
-
-            <div class="achievements-grid">
-                <div class="achievement-card fade-in">
-                    <i class="fas fa-award"></i>
-                    <h3>ADM Partner Certified Sales Professional (MFCSP)</h3>
-                    <p>Professional certification in sales methodologies and best practices</p>
-                </div>
-                <div class="achievement-card fade-in">
-                    <i class="fas fa-trophy"></i>
-                    <h3>Spot Award - ImpactQA</h3>
-                    <p>Recognized for generating 4 Enterprise Qualified Leads in a single month</p>
-                </div>
-                <div class="achievement-card fade-in">
-                    <i class="fas fa-medal"></i>
-                    <h3>Certificate of Recognition - Polestar</h3>
-                    <p>Honored for consistent performance and dedication to excellence</p>
-                </div>
-                <div class="achievement-card fade-in">
-                    <i class="fas fa-star"></i>
-                    <h3>High-Grade Lead Conversion</h3>
-                    <p>Successfully engaged and converted enterprise-level clients across multiple industries</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Let's discuss how I can contribute to your team's success</p>
-
-            <div class="contact-content">
-                <div class="contact-grid">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="contact-item-content">
-                            <h4>Location</h4>
-                            <p>Ghaziabad, India</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div class="contact-item-content">
-                            <h4>Email</h4>
-                            <p><a href="mailto:dixitshubham75@gmail.com">dixitshubham75@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div class="contact-item-content">
-                            <h4>Phone</h4>
-                            <p><a href="tel:+918851617334">+91 88516 17334</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div class="contact-item-content">
-                            <h4>LinkedIn</h4>
-                            <p><a href="https://www.linkedin.com/in/shubham-dixit-125526317/" target="_blank">Connect with me</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-buttons">
-                    <a href="#" class="btn btn-primary" download>
-                        <i class="fas fa-file-download"></i> Download My CV
-                    </a>
-                    <a href="mailto:dixitshubham75@gmail.com" class="btn btn-secondary">
-                        <i class="fas fa-paper-plane"></i> Send Email
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/shubham-dixit-125526317/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="mailto:dixitshubham75@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="tel:+918851617334"><i class="fas fa-phone"></i></a>
-            <a href="https://github.com/shubhamdixit" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-        <p>&copy; 2024 Shubham Dixit. All rights reserved.</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Business Development | Lead Generation | IT Sales</p>
-    </footer>
-
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scrollTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script>
-        // Mobile Menu Toggle
-        const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.getElementById('navLinks');
-
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Scroll Animation
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Scroll to Top Button
-        const scrollTopBtn = document.getElementById('scrollTop');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                scrollTopBtn.classList.add('visible');
-            } else {
-                scrollTopBtn.classList.remove('visible');
-            }
-        });
-
-        scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const offsetTop = target.offsetTop - 80;
-                    window.scrollTo({
-                        top: offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Active nav link on scroll
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
-
-</body>
-
-</html>
+        <div class="timeline-item">
+          <div class="marker"></div>
+          <div class="job">
+            <h4>Recam Solutions — Senior Lead Generation Executive</h4>
+            <div class="meta">Nov 2023 — Feb 2024</div>
+            <ul>
