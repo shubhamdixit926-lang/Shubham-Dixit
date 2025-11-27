@@ -1,314 +1,1243 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Shubham Dixit — Senior Business Development Executive</title>
-<meta name="description" content="Portfolio of Shubham Dixit — Senior Business Development Executive, Lead Generation & Sales Specialist." />
-<style>
-  :root{
-    --bg:#ffffff;
-    --card:#f8fafc;
-    --muted:#6b7280;
-    --navy:#0b2545;
-    --accent:#0f5bb5;
-    --glass: rgba(255,255,255,0.6);
-    --radius:16px;
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0;
-    background: linear-gradient(180deg,#ffffff 0%, #f3f6fb 100%);
-    color:#0f1724;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    line-height:1.5;
-  }
-  header{
-    position:sticky;
-    top:0;
-    z-index:40;
-    backdrop-filter: blur(6px);
-    background: rgba(255,255,255,0.55);
-    border-bottom: 1px solid rgba(15,23,36,0.04);
-  }
-  .container{max-width:1100px;margin:0 auto;padding:28px;}
-  .nav{
-    display:flex;
-    gap:16px;
-    align-items:center;
-    justify-content:space-between;
-  }
-  .brand{
-    display:flex;gap:12px;align-items:center;font-weight:700;color:var(--navy);
-  }
-  .brand .dot{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--accent),#103f7a);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
-  nav ul{display:flex;gap:14px;align-items:center;margin:0;padding:0;list-style:none}
-  nav a{color:var(--muted);text-decoration:none;font-size:14px}
-  .cta{display:inline-block;padding:10px 14px;background:var(--accent);color:white;border-radius:10px;font-weight:600;text-decoration:none}
-  /* Hero */
-  .hero{
-    display:grid;
-    grid-template-columns: 1fr 360px;
-    gap:28px;
-    align-items:center;
-    padding:36px 0 56px;
-  }
-  .hero-left h1{font-size:32px;margin:0 0 8px;color:var(--navy)}
-  .title-sub{color:var(--accent);font-weight:600;margin-bottom:12px}
-  .tagline{color:var(--muted);max-width:62ch}
-  .hero-actions{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
-  .btn{padding:10px 14px;border-radius:10px;border:1px solid rgba(15,23,36,0.06);background:white;text-decoration:none;color:var(--navy);font-weight:600}
-  .download{background:transparent;color:var(--navy)}
-  .profile-card{
-    background: linear-gradient(180deg, white, var(--card));
-    padding:18px;border-radius:18px;box-shadow: 0 6px 20px rgba(16,24,40,0.06);text-align:center;
-  }
-  .avatar{
-    width:100px;height:100px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#2b6cb0);display:inline-flex;align-items:center;justify-content:center;color:white;font-size:32px;margin-bottom:12px;
-  }
-  .muted{color:var(--muted)}
-  /* Grid sections */
-  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  section{margin-bottom:28px}
-  .card{background:white;padding:20px;border-radius:14px;box-shadow:0 6px 18px rgba(12,18,32,0.04)}
-  /* Experience timeline */
-  .timeline{display:flex;flex-direction:column;gap:12px}
-  .timeline-item{display:flex;gap:12px;align-items:flex-start}
-  .timeline-item .marker{width:12px;height:12px;border-radius:4px;background:var(--accent);margin-top:6px}
-  .job{flex:1}
-  .job h4{margin:0 0 4px;font-size:16px;color:var(--navy)}
-  .job .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
-  .job ul{margin:0;padding-left:18px;color:var(--muted);font-size:14px}
-  /* Tools grid */
-  .tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
-  .tool{background:linear-gradient(180deg,#fff,#fbfcff);padding:12px;border-radius:12px;border:1px solid rgba(15,23,36,0.04);display:flex;align-items:center;gap:12px}
-  .tool svg{width:28px;height:28px;flex-shrink:0}
-  /* Achievements */
-  .badges{display:flex;gap:10px;flex-wrap:wrap}
-  .badge{background:linear-gradient(90deg,#fff,#f6fbff);padding:10px 12px;border-radius:10px;border:1px solid rgba(15,23,36,0.04);font-weight:600;color:var(--navy)}
-  /* Contact */
-  .contact-grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
-  form input, form textarea{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(15,23,36,0.08);margin-bottom:10px;font-size:14px}
-  form button{padding:11px 14px;border-radius:10px;border:0;background:var(--accent);color:white;font-weight:700}
-  footer{padding:18px 0;color:var(--muted);font-size:14px;text-align:center}
-  /* small screens */
-  @media (max-width:880px){
-    .hero{grid-template-columns:1fr; text-align:left}
-    .profile-card{order:2}
-    .contact-grid{grid-template-columns:1fr}
-    .grid-2{grid-template-columns:1fr}
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Dixit — Business Development Representative</title>
+    <meta name="description" content="Experienced Business Development Representative specialising in lead generation, appointment setting, and CRM-driven pipelines.">
+    <meta name="keywords" content="Business Development, Lead Generation, Sales, BDE, Shubham Dixit">
+    <meta name="author" content="Shubham Dixit">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0F172A;
+            --accent: #7C3AED;
+            --accent-light: #8B5CF6;
+            --muted: #64748B;
+            --bg: #FCFCFD;
+            --card-bg: #FFFFFF;
+            --shadow-soft: 0 4px 20px rgba(15, 23, 42, 0.08);
+            --shadow-hover: 0 8px 30px rgba(124, 58, 237, 0.15);
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--primary);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: white;
+            padding: 12px 24px;
+            border-radius: var(--radius-md);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .skip-link:focus {
+            top: 20px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            transition: var(--transition);
+            padding: 16px 0;
+        }
+
+        header.scrolled {
+            background: rgba(252, 252, 253, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(15, 23, 42, 0.06);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--primary);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        nav a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--muted);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: var(--transition);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: var(--radius-md);
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cta-btn:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .cta-btn:active {
+            transform: translateY(0);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--primary);
+            margin: 6px 0;
+            transition: var(--transition);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 24px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            height: 100%;
+            background: radial-gradient(ellipse at top right, rgba(124, 58, 237, 0.08), transparent 60%);
+            pointer-events: none;
+        }
+
+        .hero-container {
+            max-width: 800px;
+            text-align: center;
+            animation: fadeUp 0.8s ease-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            margin: 0 auto 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            font-weight: 600;
+            box-shadow: 0 8px 30px rgba(124, 58, 237, 0.3);
+        }
+
+        .eyebrow {
+            display: inline-block;
+            background: rgba(124, 58, 237, 0.1);
+            color: var(--accent);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--muted);
+            max-width: 600px;
+            margin: 0 auto 36px;
+            line-height: 1.7;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            padding: 14px 28px;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-light);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            padding: 14px 28px;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            border: 2px solid rgba(15, 23, 42, 0.1);
+            transition: var(--transition);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* Sections */
+        section {
+            padding: 100px 24px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about-content {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .about-content p {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .about-details {
+            display: grid;
+            gap: 16px;
+        }
+
+        .about-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--muted);
+        }
+
+        .about-item svg {
+            width: 20px;
+            height: 20px;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .about-item a {
+            color: var(--primary);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .about-item a:hover {
+            color: var(--accent);
+        }
+
+        /* Experience Section */
+        .experience-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .experience-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            box-shadow: var(--shadow-soft);
+            border-left: 4px solid var(--accent);
+            transition: var(--transition);
+            animation: fadeIn 0.6s ease-out backwards;
+        }
+
+        .experience-card:nth-child(1) { animation-delay: 0.1s; }
+        .experience-card:nth-child(2) { animation-delay: 0.2s; }
+        .experience-card:nth-child(3) { animation-delay: 0.3s; }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .experience-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateX(4px);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .experience-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .experience-card .company {
+            color: var(--accent);
+            font-weight: 500;
+            margin-top: 4px;
+        }
+
+        .experience-card .dates {
+            color: var(--muted);
+            font-size: 0.9rem;
+            background: rgba(124, 58, 237, 0.08);
+            padding: 6px 12px;
+            border-radius: 50px;
+        }
+
+        .experience-card ul {
+            list-style: none;
+            margin-top: 16px;
+        }
+
+        .experience-card li {
+            position: relative;
+            padding-left: 24px;
+            color: var(--muted);
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .experience-card li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .skill-pill {
+            background: var(--card-bg);
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 500;
+            color: var(--primary);
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        .skill-pill:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        /* Tools Section */
+        .tools-section {
+            padding-top: 0;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 16px;
+        }
+
+        .tool-item {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--radius-md);
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            cursor: default;
+        }
+
+        .tool-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .tool-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            border-radius: var(--radius-md);
+            margin: 0 auto 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .tool-item span {
+            font-size: 0.85rem;
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        /* Achievements Section */
+        .achievements-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .achievement-item {
+            background: var(--card-bg);
+            padding: 24px 32px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: var(--transition);
+        }
+
+        .achievement-item:hover {
+            transform: translateX(8px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .achievement-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(124, 58, 237, 0.2));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .achievement-icon svg {
+            width: 24px;
+            height: 24px;
+            color: var(--accent);
+        }
+
+        .achievement-item p {
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--primary);
+            max-width: 100%;
+            margin: 0;
+            padding: 100px 24px;
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-section .section-header h2 {
+            color: white;
+        }
+
+        .contact-section .section-header h2::after {
+            background: white;
+        }
+
+        .contact-intro {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 48px;
+            font-size: 1.1rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        .contact-method {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 24px;
+            border-radius: var(--radius-md);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .contact-method:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .contact-method svg {
+            width: 32px;
+            height: 32px;
+            color: var(--accent-light);
+            margin-bottom: 16px;
+        }
+
+        .contact-method h4 {
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .contact-method a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .contact-method a:hover {
+            color: white;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-md);
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .form-submit:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+        }
+
+        .form-success {
+            display: none;
+            text-align: center;
+            color: #4ade80;
+            padding: 20px;
+            background: rgba(74, 222, 128, 0.1);
+            border-radius: var(--radius-md);
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px 24px;
+        }
+
+        .footer-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-text {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--accent);
+        }
+
+        .social-link svg {
+            width: 20px;
+            height: 20px;
+            color: white;
+        }
+
+        /* Mobile Navigation */
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(252, 252, 253, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 99;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+            opacity: 0;
+            pointer-events: none;
+            transition: var(--transition);
+        }
+
+        .mobile-nav.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .mobile-nav a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .mobile-nav {
+                display: flex;
+            }
+
+            .hero {
+                padding: 100px 20px 60px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            .about-content {
+                padding: 28px;
+            }
+
+            .experience-card {
+                padding: 24px;
+            }
+
+            .experience-header {
+                flex-direction: column;
+            }
+
+            .contact-form {
+                padding: 24px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-<header>
-  <div class="container nav">
-    <div class="brand">
-      <div class="dot">SD</div>
-      <div>
-        <div style="font-size:14px">Shubham Dixit</div>
-        <div style="font-size:12px;color:var(--muted)">Senior Business Development Executive</div>
-      </div>
-    </div>
+    <a href="#main" class="skip-link">Skip to content</a>
 
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#tools">Tools</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a class="cta" href="ShubhamDixit- Resume- updated-27 NOV.docx" download>Download Resume</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main class="container">
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-left">
-      <h1>Shubham Dixit</h1>
-      <div class="title-sub">Senior Business Development Executive — Lead Generation Specialist</div>
-      <p class="tagline">
-        Driving growth through strategic lead generation, appointment setting, and client engagement. 5.5+ years experience across international & domestic markets — SaaS, AI/ML, staffing, and data engineering.
-      </p>
-
-      <div class="hero-actions">
-        <a class="btn" href="#contact">Contact Me</a>
-        <a class="btn download" href="mailto:dixitshubham75@gmail.com">Email: dixitshubham75@gmail.com</a>
-        <a class="btn" href="https://www.linkedin.com/in/shubham-dixit-7b186a198/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </div>
-
-    <aside class="profile-card">
-      <div class="avatar">SD</div>
-      <div style="font-weight:700;font-size:16px">Shubham Dixit</div>
-      <div class="muted" style="font-size:13px;margin-bottom:10px">Senior Business Development Executive</div>
-      <div style="font-size:14px;margin-bottom:10px">Main Shyam Park, Sahibabad, Ghaziabad, India</div>
-      <div style="display:flex;gap:8px;justify-content:center">
-        <a class="btn" href="tel:+918851617334">Call</a>
-        <a class="btn" href="ShubhamDixit- Resume- updated-27 NOV.docx" download>Download CV</a>
-      </div>
-    </aside>
-  </section>
-
-  <!-- ABOUT & EXPERIENCE -->
-  <section id="about" class="grid-2">
-    <div class="card">
-      <h3>About</h3>
-      <p class="muted">
-        As a Senior Business Development Representative with over 5.5 years of experience, I specialize in lead generation for international and domestic markets. I focus on setting meetings, qualifying prospects, and collaborating with sales teams to convert prospects into long-term customers. I have strong skills in research, outreach (email / LinkedIn / cold call), CRM management, and reporting.
-      </p>
-
-      <h4 style="margin-top:16px">Core Strengths</h4>
-      <ul style="color:var(--muted);padding-left:18px">
-        <li>Lead generation & qualification</li>
-        <li>Appointment setting & pipeline management</li>
-        <li>CRM (HubSpot, Salesforce, Zoho) & reporting</li>
-        <li>Tools: Lusha, Apollo, Sales Navigator, Seamless.ai, GMass</li>
-      </ul>
-    </div>
-
-    <div class="card" id="experience">
-      <h3>Experience (Highlights)</h3>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="marker" aria-hidden></div>
-          <div class="job">
-            <h4>RDSolutions — Senior Business Development Executive</h4>
-            <div class="meta">May 13, 2025 — Present</div>
-            <ul>
-              <li>Lead generation for Web Scraping, Staffing, AI/ML, Data Engineering.</li>
-              <li>Candidate qualification, appointment setting, CRM updates (HubSpot).</li>
-              <li>Promoted product offerings (Intrics, InfoQuest) and maintained pipeline.</li>
-            </ul>
-          </div>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <a href="#" class="logo">Shubham D.</a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="#" class="cta-btn" onclick="alert('Resume PDF would download here')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Download CV
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
+    </header>
 
-        <div class="timeline-item">
-          <div class="marker"></div>
-          <div class="job">
-            <h4>NextZen Minds — Senior Business Development Executive</h4>
-            <div class="meta">Jun 12, 2024 — Apr 1, 2025</div>
-            <ul>
-              <li>Generated leads for software dev & staff augmentation; outreach across channels.</li>
-              <li>Account research and handover to sales for closures.</li>
-            </ul>
-          </div>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#about" onclick="toggleMobileMenu()">About</a>
+        <a href="#experience" onclick="toggleMobileMenu()">Experience</a>
+        <a href="#skills" onclick="toggleMobileMenu()">Skills</a>
+        <a href="#achievements" onclick="toggleMobileMenu()">Achievements</a>
+        <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
+        <a href="#" class="cta-btn" onclick="alert('Resume PDF would download here')">Download CV</a>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="profile-image" aria-label="Profile photo of Shubham Dixit">SD</div>
+                <span class="eyebrow">Senior Business Development Representative</span>
+                <h1>Empowering Businesses to Achieve Their Digital Goals</h1>
+                <p>5+ years generating qualified leads, setting discovery calls, and handing over high-quality opportunities for SaaS, AI/ML, and engineering teams.</p>
+                <div class="hero-ctas">
+                    <a href="mailto:dixitshubham75@gmail.com" class="btn-primary">Book a quick intro</a>
+                    <a href="#experience" class="btn-secondary">View experience</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="section-header">
+                <h2>About</h2>
+            </div>
+            <div class="about-content">
+                <p>I am a Senior Business Development Representative with 5.5+ years experience in lead generation for international and domestic markets. I specialise in research-driven outreach across email, LinkedIn, and calling — and hand over warm, qualified leads to sales teams for closure.</p>
+                <div class="about-details">
+                    <div class="about-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Main Shyam Park, Sahibabad, Ghaziabad, India</span>
+                    </div>
+                    <div class="about-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <a href="tel:+918851617334">+91 8851617334</a>
+                    </div>
+                    <div class="about-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <a href="mailto:dixitshubham75@gmail.com">dixitshubham75@gmail.com</a>
+                    </div>
+                    <div class="about-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                        <a href="https://www.linkedin.com/in/shubham-dixit-7b186a198/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="section-header">
+                <h2>Experience</h2>
+            </div>
+            <div class="experience-timeline">
+                <article class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Senior Business Development Executive</h3>
+                            <p class="company">RDSolutions</p>
+                        </div>
+                        <span class="dates">May 2025 – Present</span>
+                    </div>
+                    <ul>
+                        <li>Generate high-quality leads for web scraping, staffing, AI/ML and data engineering services.</li>
+                        <li>Prospect via email outreach, cold calls and LinkedIn; maintain HubSpot CRM.</li>
+                        <li>Coordinate demos and ensure smooth handover to sales with detailed lead insights.</li>
+                    </ul>
+                </article>
+
+                <article class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Senior Business Development Executive</h3>
+                            <p class="company">NextZen Minds</p>
+                        </div>
+                        <span class="dates">Jun 2024 – Apr 2025</span>
+                    </div>
+                    <ul>
+                        <li>Lead generation for software development and staff augmentation.</li>
+                        <li>Account research and decision-maker outreach for SaaS, AI/ML, cloud security projects.</li>
+                    </ul>
+                </article>
+
+                <article class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Senior Lead Generation Executive</h3>
+                            <p class="company">Recam Solutions</p>
+                        </div>
+                        <span class="dates">Nov 2023 – Feb 2024</span>
+                    </div>
+                    <ul>
+                        <li>Managed lead-gen workflows for LMS solutions and enterprise prospects.</li>
+                        <li>Used tools like Lusha, Apollo, and Sales Navigator for research.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="section-header">
+                <h2>Core Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <span class="skill-pill">Lead Generation</span>
+                <span class="skill-pill">Inside Sales</span>
+                <span class="skill-pill">Appointment Setting</span>
+                <span class="skill-pill">Data Mining</span>
+                <span class="skill-pill">Campaign Management</span>
+                <span class="skill-pill">LinkedIn Sales Navigator</span>
+                <span class="skill-pill">CRM: HubSpot</span>
+                <span class="skill-pill">CRM: Zoho</span>
+                <span class="skill-pill">CRM: Salesforce</span>
+            </div>
+        </section>
+
+        <!-- Tools Section -->
+        <section class="tools-section">
+            <div class="section-header">
+                <h2>Tools & Tech</h2>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-item" title="Lusha - Contact data platform">
+                    <div class="tool-icon">Lu</div>
+                    <span>Lusha</span>
+                </div>
+                <div class="tool-item" title="Apollo - Sales intelligence platform">
+                    <div class="tool-icon">Ap</div>
+                    <span>Apollo</span>
+                </div>
+                <div class="tool-item" title="Sales Navigator - LinkedIn prospecting">
+                    <div class="tool-icon">SN</div>
+                    <span>Sales Navigator</span>
+                </div>
+                <div class="tool-item" title="Seamless.ai - Lead generation tool">
+                    <div class="tool-icon">Se</div>
+                    <span>Seamless.ai</span>
+                </div>
+                <div class="tool-item" title="GMass - Email marketing for Gmail">
+                    <div class="tool-icon">Gm</div>
+                    <span>GMass</span>
+                </div>
+                <div class="tool-item" title="HubSpot - CRM platform">
+                    <div class="tool-icon">Hu</div>
+                    <span>HubSpot</span>
+                </div>
+                <div class="tool-item" title="Zoho - CRM suite">
+                    <div class="tool-icon">Zo</div>
+                    <span>Zoho</span>
+                </div>
+                <div class="tool-item" title="Salesforce - Enterprise CRM">
+                    <div class="tool-icon">Sf</div>
+                    <span>Salesforce</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements">
+            <div class="section-header">
+                <h2>Achievements</h2>
+            </div>
+            <div class="achievements-list">
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="7"/>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                        </svg>
+                    </div>
+                    <p>Spot award at ImpactQA for 4 enterprise qualified leads in a month</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <p>ADM Partner Certified Sales Professional (MFCSP)</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </div>
+                    <p>Certificate of recognition at Polestar</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="section-header">
+                    <h2>Get in touch</h2>
+                </div>
+                <p class="contact-intro">Open to growth-focused sales and lead-gen roles, freelance lead-gen projects, and collaboration with product/sales teams.</p>
+                
+                <div class="contact-grid">
+                    <a href="mailto:dixitshubham75@gmail.com" class="contact-method">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <h4>Email</h4>
+                        <span>dixitshubham75@gmail.com</span>
+                    </a>
+                    <a href="tel:+918851617334" class="contact-method">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <h4>Phone</h4>
+                        <span>+91 8851617334</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shubham-dixit-7b186a198/" target="_blank" rel="noopener noreferrer" class="contact-method">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                        <h4>LinkedIn</h4>
+                        <span>linkedin.com/in/shubham-dixit</span>
+                    </a>
+                </div>
+
+                <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Tell me about your project or opportunity..."></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Send Message</button>
+                    <div class="form-success" id="formSuccess">Thanks — I'll respond within 48 hours.</div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p class="footer-text">© <span id="year"></span> Shubham Dixit — Built with an aesthetic, minimal design.</p>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="https://www.linkedin.com/in/shubham-dixit-7b186a198/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+            </div>
         </div>
+    </footer>
 
-        <div class="timeline-item">
-          <div class="marker"></div>
-          <div class="job">
-            <h4>Recam Solutions — Senior Lead Generation Executive</h4>
-            <div class="meta">Nov 2023 — Feb 2024</div>
-            <ul>
-              <li>Market research, e-marketing and Linkedin outreach for LMS solutions.</li>
-            </ul>
-          </div>
-        </div>
+    <script>
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-        <div class="timeline-item">
-          <div class="marker"></div>
-          <div class="job">
-            <h4>ImpactQA — Business Development Executive</h4>
-            <div class="meta">Jan 17, 2023 — Oct 27, 2023</div>
-            <ul>
-              <li>Generated high-quality leads; received spot award for 4 enterprise QLs in a month.</li>
-            </ul>
-          </div>
-        </div>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
 
-        <div class="timeline-item">
-          <div class="marker"></div>
-          <div class="job">
-            <h4>Polestar IT Solutions — Business Development Representative</h4>
-            <div class="meta">Apr 1, 2020 — Oct 10, 2022</div>
-            <ul>
-              <li>Lead generation in IT services: data analytics, BI, cloud; consistent performance recognition.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+        }
 
-  <!-- Tools & Achievements -->
-  <section class="grid-2">
-    <div class="card" id="tools">
-      <h3>Tools & Technologies</h3>
-      <div class="tools" style="margin-top:12px">
-        <div class="tool"><svg viewBox="0 0 24 24" fill="none" aria-hidden><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-opacity="0.12"/></svg><div><strong>Lusha</strong><div class="muted" style="font-size:12px">Contact enrichment</div></div></div>
-        <div class="tool"><svg viewBox="0 0 24 24" fill="none" aria-hidden><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-opacity="0.12"/></svg><div><strong>Apollo</strong><div class="muted" style="font-size:12px">Sales intelligence</div></div></div>
-        <div class="tool"><svg viewBox="0 0 24 24" fill="none" aria-hidden><path d="M3 12h18" stroke="currentColor" stroke-opacity="0.12"/></svg><div><strong>Sales Navigator</strong><div class="muted" style="font-size:12px">LinkedIn outreach</div></div></div>
-        <div class="tool"><svg viewBox="0 0 24 24" fill="none" aria-hidden><path d="M4 4h16v16H4z" stroke="currentColor" stroke-opacity="0.12"/></svg><div><strong>HubSpot / Salesforce / Zoho</strong><div class="muted" style="font-size:12px">CRM</div></div></div>
-        <div class="tool"><svg viewBox="0 0 24 24" fill="none" aria-hidden><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-opacity="0.12"/></svg><div><strong>GMass / Mailchimp</strong><div class="muted" style="font-size:12px">Email campaigns</div></div></div>
-        <div class="tool"><svg viewBox="0 0 24 24" fill="none" aria-hidden><path d="M6 6l12 12" stroke="currentColor" stroke-opacity="0.12"/></svg><div><strong>Verification</strong><div class="muted" style="font-size:12px">Quick Email Verification</div></div></div>
-      </div>
-    </div>
+        // Form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('contactForm');
+            const success = document.getElementById('formSuccess');
+            
+            // Simulate form submission
+            success.style.display = 'block';
+            form.reset();
+            
+            setTimeout(() => {
+                success.style.display = 'none';
+            }, 5000);
+        }
 
-    <div class="card">
-      <h3>Achievements</h3>
-      <div class="badges" style="margin-top:12px">
-        <div class="badge">Spot Award — ImpactQA</div>
-        <div class="badge">Certificate of Recognition — Polestar</div>
-        <div class="badge">ADM Partner Certified Sales Professional (MFCSP)</div>
-        <div class="badge">Consistent Enterprise Lead Generation</div>
-      </div>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
 
-      <h4 style="margin-top:16px">Education</h4>
-      <div class="muted" style="font-size:14px">
-        B.Com — MGCGV (2018–2021)<br/>
-        AAIP — Arena Animation, Delhi (2018–2020)
-      </div>
-    </div>
-  </section>
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
-  <!-- Quote -->
-  <section>
-    <div class="card" style="text-align:center;">
-      <div style="font-size:18px;font-weight:700;color:var(--navy)">“All our dreams can come true if we have the courage to pursue them.”</div>
-      <div class="muted" style="margin-top:8px">— Favourite quote</div>
-    </div>
-  </section>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
 
-  <!-- Contact -->
-  <section id="contact" class="contact-grid">
-    <div class="card">
-      <h3>Contact</h3>
-      <p class="muted">Want to discuss lead generation, staffing, or a potential collaboration? Drop a message and I will respond.</p>
-
-      <!-- Non-functional example form (replace action with your backend or form handler) -->
-      <form onsubmit="alert('This is a demo form. Hook this up to an email provider or backend.'); return false;">
-        <input type="text" name="name" placeholder="Your name" required />
-        <input type="email" name="email" placeholder="Your email" required />
-        <input type="text" name="subject" placeholder="Subject" />
-        <textarea name="message" rows="5" placeholder="Message"></textarea>
-        <button type="submit">Send message</button>
-      </form>
-    </div>
-
-    <aside class="card">
-      <h4>Contact Info</h4>
-      <p class="muted" style="margin-top:6px">
-        <strong>Phone:</strong> <a href="tel:+918851617334">+91 88516 17334</a><br/>
-        <strong>Email:</strong> <a href="mailto:dixitshubham75@gmail.com">dixitshubham75@gmail.com</a><br/>
-        <strong>Location:</strong> Main Shyam Park, Sahibabad, Ghaziabad, 201005<br/>
-      </p>
-
-      <h4 style="margin-top:12px">Quick Links</h4>
-      <p style="margin-top:6px">
-        <a href="https://www.linkedin.com/in/shubham-dixit-7b186a198/" target="_blank" rel="noopener">LinkedIn</a> • <a href="#">Download CV</a>
-      </p>
-    </aside>
-  </section>
-</main>
-
-<footer>
-  <div class="container">© <strong>Shubham Dixit</strong> — Senior Business Development Executive • Built with care</div>
-</footer>
-
+        document.querySelectorAll('.experience-card, .achievement-item, .tool-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
