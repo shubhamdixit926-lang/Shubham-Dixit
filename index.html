@@ -3,1241 +3,539 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubham Dixit — Business Development Representative</title>
-    <meta name="description" content="Experienced Business Development Representative specialising in lead generation, appointment setting, and CRM-driven pipelines.">
-    <meta name="keywords" content="Business Development, Lead Generation, Sales, BDE, Shubham Dixit">
+    <meta name="description" content="Resume website of Shubham Dixit — Senior Business Development Representative with 5.5+ years in lead generation, appointment setting, CRM management and sales coordination.">
     <meta name="author" content="Shubham Dixit">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Shubham Dixit — Senior Business Development Representative (Resume)">
+    <meta property="og:description" content="Resume website of Shubham Dixit — Senior Business Development Representative with 5.5+ years in lead generation, appointment setting, CRM management and sales coordination.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://shubhamdixit.com">
+    <meta property="og:image" content="og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shubham Dixit — Senior Business Development Representative">
+    <meta name="twitter:description" content="5.5+ years experience in lead generation, appointment setting, CRM management">
+    
+    <title>Shubham Dixit — Senior Business Development Representative (Resume)</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #0F172A;
-            --accent: #7C3AED;
-            --accent-light: #8B5CF6;
-            --muted: #64748B;
-            --bg: #FCFCFD;
-            --card-bg: #FFFFFF;
-            --shadow-soft: 0 4px 20px rgba(15, 23, 42, 0.08);
-            --shadow-hover: 0 8px 30px rgba(124, 58, 237, 0.15);
-            --radius-md: 12px;
-            --radius-lg: 16px;
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-            background: var(--bg);
-            color: var(--primary);
-            line-height: 1.6;
-            font-size: 16px;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .skip-link {
-            position: absolute;
-            top: -100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--accent);
-            color: white;
-            padding: 12px 24px;
-            border-radius: var(--radius-md);
-            z-index: 1000;
-            transition: var(--transition);
-        }
-
-        .skip-link:focus {
-            top: 20px;
-        }
-
-        /* Header */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 100;
-            transition: var(--transition);
-            padding: 16px 0;
-        }
-
-        header.scrolled {
-            background: rgba(252, 252, 253, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(15, 23, 42, 0.06);
-        }
-
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo {
-            font-weight: 700;
-            font-size: 1.25rem;
-            color: var(--primary);
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 32px;
-        }
-
-        nav a {
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: var(--muted);
-            transition: var(--transition);
-            position: relative;
-        }
-
-        nav a:hover {
-            color: var(--primary);
-        }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--accent);
-            transition: var(--transition);
-        }
-
-        nav a:hover::after {
-            width: 100%;
-        }
-
-        .cta-btn {
-            background: var(--primary);
-            color: white;
-            padding: 10px 20px;
-            border-radius: var(--radius-md);
-            font-weight: 500;
-            font-size: 0.9rem;
-            transition: var(--transition);
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .cta-btn:hover {
-            background: var(--accent);
-            transform: translateY(-2px);
-        }
-
-        .cta-btn:active {
-            transform: translateY(0);
-        }
-
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 8px;
-        }
-
-        .mobile-menu-btn span {
-            display: block;
-            width: 24px;
-            height: 2px;
-            background: var(--primary);
-            margin: 6px 0;
-            transition: var(--transition);
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 120px 24px 80px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 60%;
-            height: 100%;
-            background: radial-gradient(ellipse at top right, rgba(124, 58, 237, 0.08), transparent 60%);
-            pointer-events: none;
-        }
-
-        .hero-container {
-            max-width: 800px;
-            text-align: center;
-            animation: fadeUp 0.8s ease-out;
-        }
-
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .profile-image {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent), var(--accent-light));
-            margin: 0 auto 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
-            color: white;
-            font-weight: 600;
-            box-shadow: 0 8px 30px rgba(124, 58, 237, 0.3);
-        }
-
-        .eyebrow {
-            display: inline-block;
-            background: rgba(124, 58, 237, 0.1);
-            color: var(--accent);
-            padding: 8px 16px;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 24px;
-            letter-spacing: 0.5px;
-        }
-
-        .hero h1 {
-            font-size: clamp(2rem, 5vw, 3rem);
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 20px;
-            color: var(--primary);
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: var(--muted);
-            max-width: 600px;
-            margin: 0 auto 36px;
-            line-height: 1.7;
-        }
-
-        .hero-ctas {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn-primary {
-            background: var(--accent);
-            color: white;
-            padding: 14px 28px;
-            border-radius: var(--radius-md);
-            font-weight: 600;
-            transition: var(--transition);
-            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
-        }
-
-        .btn-primary:hover {
-            background: var(--accent-light);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--primary);
-            padding: 14px 28px;
-            border-radius: var(--radius-md);
-            font-weight: 600;
-            border: 2px solid rgba(15, 23, 42, 0.1);
-            transition: var(--transition);
-        }
-
-        .btn-secondary:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-        }
-
-        /* Sections */
-        section {
-            padding: 100px 24px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-header h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 12px;
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-header h2::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 40px;
-            height: 3px;
-            background: var(--accent);
-            border-radius: 2px;
-        }
-
-        /* About Section */
-        .about-content {
-            background: var(--card-bg);
-            border-radius: var(--radius-lg);
-            padding: 40px;
-            box-shadow: var(--shadow-soft);
-        }
-
-        .about-content p {
-            color: var(--muted);
-            font-size: 1.05rem;
-            line-height: 1.8;
-            margin-bottom: 30px;
-        }
-
-        .about-details {
-            display: grid;
-            gap: 16px;
-        }
-
-        .about-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: var(--muted);
-        }
-
-        .about-item svg {
-            width: 20px;
-            height: 20px;
-            color: var(--accent);
-            flex-shrink: 0;
-        }
-
-        .about-item a {
-            color: var(--primary);
-            font-weight: 500;
-            transition: var(--transition);
-        }
-
-        .about-item a:hover {
-            color: var(--accent);
-        }
-
-        /* Experience Section */
-        .experience-timeline {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-        }
-
-        .experience-card {
-            background: var(--card-bg);
-            border-radius: var(--radius-lg);
-            padding: 32px;
-            box-shadow: var(--shadow-soft);
-            border-left: 4px solid var(--accent);
-            transition: var(--transition);
-            animation: fadeIn 0.6s ease-out backwards;
-        }
-
-        .experience-card:nth-child(1) { animation-delay: 0.1s; }
-        .experience-card:nth-child(2) { animation-delay: 0.2s; }
-        .experience-card:nth-child(3) { animation-delay: 0.3s; }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .experience-card:hover {
-            box-shadow: var(--shadow-hover);
-            transform: translateX(4px);
-        }
-
-        .experience-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 16px;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .experience-card h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--primary);
-        }
-
-        .experience-card .company {
-            color: var(--accent);
-            font-weight: 500;
-            margin-top: 4px;
-        }
-
-        .experience-card .dates {
-            color: var(--muted);
-            font-size: 0.9rem;
-            background: rgba(124, 58, 237, 0.08);
-            padding: 6px 12px;
-            border-radius: 50px;
-        }
-
-        .experience-card ul {
-            list-style: none;
-            margin-top: 16px;
-        }
-
-        .experience-card li {
-            position: relative;
-            padding-left: 24px;
-            color: var(--muted);
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-
-        .experience-card li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 10px;
-            width: 8px;
-            height: 8px;
-            background: var(--accent);
-            border-radius: 50%;
-        }
-
-        /* Skills Section */
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-        }
-
-        .skill-pill {
-            background: var(--card-bg);
-            padding: 12px 24px;
-            border-radius: 50px;
-            font-weight: 500;
-            color: var(--primary);
-            box-shadow: var(--shadow-soft);
-            transition: var(--transition);
-            border: 1px solid transparent;
-        }
-
-        .skill-pill:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-            transform: translateY(-2px);
-        }
-
-        /* Tools Section */
-        .tools-section {
-            padding-top: 0;
-        }
-
-        .tools-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 16px;
-        }
-
-        .tool-item {
-            background: var(--card-bg);
-            padding: 20px;
-            border-radius: var(--radius-md);
-            text-align: center;
-            box-shadow: var(--shadow-soft);
-            transition: var(--transition);
-            cursor: default;
-        }
-
-        .tool-item:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .tool-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, var(--accent), var(--accent-light));
-            border-radius: var(--radius-md);
-            margin: 0 auto 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 600;
-            font-size: 0.85rem;
-        }
-
-        .tool-item span {
-            font-size: 0.85rem;
-            color: var(--muted);
-            font-weight: 500;
-        }
-
-        /* Achievements Section */
-        .achievements-list {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .achievement-item {
-            background: var(--card-bg);
-            padding: 24px 32px;
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-soft);
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            transition: var(--transition);
-        }
-
-        .achievement-item:hover {
-            transform: translateX(8px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .achievement-icon {
-            width: 48px;
-            height: 48px;
-            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(124, 58, 237, 0.2));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .achievement-icon svg {
-            width: 24px;
-            height: 24px;
-            color: var(--accent);
-        }
-
-        .achievement-item p {
-            color: var(--primary);
-            font-weight: 500;
-        }
-
-        /* Contact Section */
-        .contact-section {
-            background: var(--primary);
-            max-width: 100%;
-            margin: 0;
-            padding: 100px 24px;
-        }
-
-        .contact-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .contact-section .section-header h2 {
-            color: white;
-        }
-
-        .contact-section .section-header h2::after {
-            background: white;
-        }
-
-        .contact-intro {
-            text-align: center;
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 48px;
-            font-size: 1.1rem;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 24px;
-            margin-bottom: 48px;
-        }
-
-        .contact-method {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 24px;
-            border-radius: var(--radius-md);
-            text-align: center;
-            transition: var(--transition);
-        }
-
-        .contact-method:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateY(-4px);
-        }
-
-        .contact-method svg {
-            width: 32px;
-            height: 32px;
-            color: var(--accent-light);
-            margin-bottom: 16px;
-        }
-
-        .contact-method h4 {
-            color: white;
-            font-size: 1rem;
-            margin-bottom: 8px;
-        }
-
-        .contact-method a {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.95rem;
-            transition: var(--transition);
-        }
-
-        .contact-method a:hover {
-            color: white;
-        }
-
-        /* Contact Form */
-        .contact-form {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 40px;
-            border-radius: var(--radius-lg);
-        }
-
-        .form-group {
-            margin-bottom: 24px;
-        }
-
-        .form-group label {
-            display: block;
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 14px 18px;
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            border-radius: var(--radius-md);
-            background: rgba(255, 255, 255, 0.05);
-            color: white;
-            font-family: inherit;
-            font-size: 1rem;
-            transition: var(--transition);
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--accent);
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .form-group textarea {
-            min-height: 150px;
-            resize: vertical;
-        }
-
-        .form-submit {
-            background: var(--accent);
-            color: white;
-            border: none;
-            padding: 16px 40px;
-            border-radius: var(--radius-md);
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: var(--transition);
-            width: 100%;
-        }
-
-        .form-submit:hover {
-            background: var(--accent-light);
-            transform: translateY(-2px);
-        }
-
-        .form-success {
-            display: none;
-            text-align: center;
-            color: #4ade80;
-            padding: 20px;
-            background: rgba(74, 222, 128, 0.1);
-            border-radius: var(--radius-md);
-            margin-top: 20px;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--primary);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 40px 24px;
-        }
-
-        .footer-container {
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .footer-text {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.9rem;
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 24px;
-        }
-
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.9rem;
-            transition: var(--transition);
-        }
-
-        .footer-links a:hover {
-            color: white;
-        }
-
-        .social-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            transition: var(--transition);
-        }
-
-        .social-link:hover {
-            background: var(--accent);
-        }
-
-        .social-link svg {
-            width: 20px;
-            height: 20px;
-            color: white;
-        }
-
-        /* Mobile Navigation */
-        .mobile-nav {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(252, 252, 253, 0.98);
-            backdrop-filter: blur(10px);
-            z-index: 99;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 32px;
-            opacity: 0;
-            pointer-events: none;
-            transition: var(--transition);
-        }
-
-        .mobile-nav.active {
-            opacity: 1;
-            pointer-events: all;
-        }
-
-        .mobile-nav a {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--primary);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            nav {
-                display: none;
-            }
-
-            .mobile-menu-btn {
-                display: block;
-            }
-
-            .mobile-nav {
-                display: flex;
-            }
-
-            .hero {
-                padding: 100px 20px 60px;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            section {
-                padding: 60px 20px;
-            }
-
-            .about-content {
-                padding: 28px;
-            }
-
-            .experience-card {
-                padding: 24px;
-            }
-
-            .experience-header {
-                flex-direction: column;
-            }
-
-            .contact-form {
-                padding: 24px;
-            }
-
-            .footer-container {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shubham Dixit",
+        "jobTitle": "Senior Business Development Representative",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Main Shyam Park, Sahibabad",
+            "addressLocality": "Ghaziabad",
+            "postalCode": "201005",
+            "addressCountry": "IN"
+        },
+        "email": "dixitshubham75@gmail.com",
+        "telephone": "+918851617334",
+        "sameAs": [
+            "https://www.linkedin.com/in/shubham-dixit-7b186a198/"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+918851617334",
+            "contactType": "professional",
+            "email": "dixitshubham75@gmail.com"
+        }
+    }
+    </script>
 </head>
 <body>
-    <a href="#main" class="skip-link">Skip to content</a>
-
-    <!-- Header -->
-    <header id="header">
-        <div class="header-container">
-            <a href="#" class="logo">Shubham D.</a>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="#achievements">Achievements</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <a href="#" class="cta-btn" onclick="alert('Resume PDF would download here')">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                    <polyline points="7 10 12 15 17 10"/>
-                    <line x1="12" y1="15" x2="12" y2="3"/>
-                </svg>
-                Download CV
-            </a>
-            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
-
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav" id="mobileNav">
-        <a href="#about" onclick="toggleMobileMenu()">About</a>
-        <a href="#experience" onclick="toggleMobileMenu()">Experience</a>
-        <a href="#skills" onclick="toggleMobileMenu()">Skills</a>
-        <a href="#achievements" onclick="toggleMobileMenu()">Achievements</a>
-        <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
-        <a href="#" class="cta-btn" onclick="alert('Resume PDF would download here')">Download CV</a>
-    </div>
-
-    <!-- Main Content -->
-    <main id="main">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-container">
-                <div class="profile-image" aria-label="Profile photo of Shubham Dixit">SD</div>
-                <span class="eyebrow">Senior Business Development Representative</span>
-                <h1>Empowering Businesses to Achieve Their Digital Goals</h1>
-                <p>5+ years generating qualified leads, setting discovery calls, and handing over high-quality opportunities for SaaS, AI/ML, and engineering teams.</p>
-                <div class="hero-ctas">
-                    <a href="mailto:dixitshubham75@gmail.com" class="btn-primary">Book a quick intro</a>
-                    <a href="#experience" class="btn-secondary">View experience</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about">
-            <div class="section-header">
-                <h2>About</h2>
-            </div>
-            <div class="about-content">
-                <p>I am a Senior Business Development Representative with 5.5+ years experience in lead generation for international and domestic markets. I specialise in research-driven outreach across email, LinkedIn, and calling — and hand over warm, qualified leads to sales teams for closure.</p>
-                <div class="about-details">
-                    <div class="about-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                            <circle cx="12" cy="10" r="3"/>
-                        </svg>
-                        <span>Main Shyam Park, Sahibabad, Ghaziabad, India</span>
-                    </div>
-                    <div class="about-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                        </svg>
-                        <a href="tel:+918851617334">+91 8851617334</a>
-                    </div>
-                    <div class="about-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
-                        </svg>
-                        <a href="mailto:dixitshubham75@gmail.com">dixitshubham75@gmail.com</a>
-                    </div>
-                    <div class="about-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                            <rect x="2" y="9" width="4" height="12"/>
-                            <circle cx="4" cy="4" r="2"/>
-                        </svg>
-                        <a href="https://www.linkedin.com/in/shubham-dixit-7b186a198/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="resume-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar" role="complementary" aria-label="Profile and Contact Information">
+            <!-- Profile Section -->
+            <section class="profile-section fade-in" aria-labelledby="profile-heading">
+                <div class="profile-photo-wrapper">
+                    <div class="profile-photo" role="img" aria-label="Shubham Dixit's profile photo">
+                        <i class="fas fa-user-tie" aria-hidden="true"></i>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience">
-            <div class="section-header">
-                <h2>Experience</h2>
-            </div>
-            <div class="experience-timeline">
-                <article class="experience-card">
-                    <div class="experience-header">
-                        <div>
-                            <h3>Senior Business Development Executive</h3>
-                            <p class="company">RDSolutions</p>
+                <h1 id="profile-heading" class="profile-name">SHUBHAM DIXIT</h1>
+                <p class="profile-headline">Senior Business Development Representative</p>
+            </section>
+            
+            <!-- Contact Section -->
+            <section class="sidebar-section fade-in" aria-labelledby="contact-heading">
+                <h2 id="contact-heading" class="section-title-sidebar">
+                    <i class="fas fa-address-card" aria-hidden="true"></i>
+                    Contact
+                </h2>
+                <ul class="contact-list" role="list">
+                    <li class="contact-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Main Shyam Park, Sahibabad, Ghaziabad, Pin code - 201005</span>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+918851617334" aria-label="Call Shubham at 8851617334">8851617334</a>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:dixitshubham75@gmail.com" aria-label="Email Shubham">dixitshubham75@gmail.com</a>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        <a href="https://www.linkedin.com/in/shubham-dixit-7b186a198/" target="_blank" rel="noopener noreferrer" aria-label="View LinkedIn Profile (opens in new tab)">LinkedIn Profile</a>
+                    </li>
+                </ul>
+            </section>
+            
+            <!-- Professional Skills Section -->
+            <section class="sidebar-section fade-in" aria-labelledby="skills-heading">
+                <h2 id="skills-heading" class="section-title-sidebar">
+                    <i class="fas fa-cogs" aria-hidden="true"></i>
+                    Professional Skills
+                </h2>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <span class="skill-name">Inside Sales</span>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress" data-width="95"></div>
                         </div>
-                        <span class="dates">May 2025 – Present</span>
                     </div>
-                    <ul>
-                        <li>Generate high-quality leads for web scraping, staffing, AI/ML and data engineering services.</li>
-                        <li>Prospect via email outreach, cold calls and LinkedIn; maintain HubSpot CRM.</li>
-                        <li>Coordinate demos and ensure smooth handover to sales with detailed lead insights.</li>
-                    </ul>
-                </article>
-
-                <article class="experience-card">
-                    <div class="experience-header">
-                        <div>
-                            <h3>Senior Business Development Executive</h3>
-                            <p class="company">NextZen Minds</p>
+                    <div class="skill-item">
+                        <span class="skill-name">Data Mining</span>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress" data-width="90"></div>
                         </div>
-                        <span class="dates">Jun 2024 – Apr 2025</span>
                     </div>
-                    <ul>
-                        <li>Lead generation for software development and staff augmentation.</li>
-                        <li>Account research and decision-maker outreach for SaaS, AI/ML, cloud security projects.</li>
-                    </ul>
-                </article>
-
-                <article class="experience-card">
-                    <div class="experience-header">
-                        <div>
-                            <h3>Senior Lead Generation Executive</h3>
-                            <p class="company">Recam Solutions</p>
+                    <div class="skill-item">
+                        <span class="skill-name">Meetings Setting up</span>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress" data-width="95"></div>
                         </div>
-                        <span class="dates">Nov 2023 – Feb 2024</span>
                     </div>
-                    <ul>
-                        <li>Managed lead-gen workflows for LMS solutions and enterprise prospects.</li>
-                        <li>Used tools like Lusha, Apollo, and Sales Navigator for research.</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <div class="section-header">
-                <h2>Core Skills</h2>
-            </div>
-            <div class="skills-grid">
-                <span class="skill-pill">Lead Generation</span>
-                <span class="skill-pill">Inside Sales</span>
-                <span class="skill-pill">Appointment Setting</span>
-                <span class="skill-pill">Data Mining</span>
-                <span class="skill-pill">Campaign Management</span>
-                <span class="skill-pill">LinkedIn Sales Navigator</span>
-                <span class="skill-pill">CRM: HubSpot</span>
-                <span class="skill-pill">CRM: Zoho</span>
-                <span class="skill-pill">CRM: Salesforce</span>
-            </div>
-        </section>
-
-        <!-- Tools Section -->
-        <section class="tools-section">
-            <div class="section-header">
-                <h2>Tools & Tech</h2>
-            </div>
-            <div class="tools-grid">
-                <div class="tool-item" title="Lusha - Contact data platform">
-                    <div class="tool-icon">Lu</div>
-                    <span>Lusha</span>
-                </div>
-                <div class="tool-item" title="Apollo - Sales intelligence platform">
-                    <div class="tool-icon">Ap</div>
-                    <span>Apollo</span>
-                </div>
-                <div class="tool-item" title="Sales Navigator - LinkedIn prospecting">
-                    <div class="tool-icon">SN</div>
-                    <span>Sales Navigator</span>
-                </div>
-                <div class="tool-item" title="Seamless.ai - Lead generation tool">
-                    <div class="tool-icon">Se</div>
-                    <span>Seamless.ai</span>
-                </div>
-                <div class="tool-item" title="GMass - Email marketing for Gmail">
-                    <div class="tool-icon">Gm</div>
-                    <span>GMass</span>
-                </div>
-                <div class="tool-item" title="HubSpot - CRM platform">
-                    <div class="tool-icon">Hu</div>
-                    <span>HubSpot</span>
-                </div>
-                <div class="tool-item" title="Zoho - CRM suite">
-                    <div class="tool-icon">Zo</div>
-                    <span>Zoho</span>
-                </div>
-                <div class="tool-item" title="Salesforce - Enterprise CRM">
-                    <div class="tool-icon">Sf</div>
-                    <span>Salesforce</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Achievements Section -->
-        <section id="achievements">
-            <div class="section-header">
-                <h2>Achievements</h2>
-            </div>
-            <div class="achievements-list">
-                <div class="achievement-item">
-                    <div class="achievement-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="8" r="7"/>
-                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
-                        </svg>
+                    <div class="skill-item">
+                        <span class="skill-name">Lead Generation</span>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress" data-width="98"></div>
+                        </div>
                     </div>
-                    <p>Spot award at ImpactQA for 4 enterprise qualified leads in a month</p>
-                </div>
-                <div class="achievement-item">
-                    <div class="achievement-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
+                    <div class="skill-item">
+                        <span class="skill-name">Campaign Management</span>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
                     </div>
-                    <p>ADM Partner Certified Sales Professional (MFCSP)</p>
-                </div>
-                <div class="achievement-item">
-                    <div class="achievement-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                        </svg>
+                    <div class="skill-item">
+                        <span class="skill-name">LinkedIn Sales Navigator</span>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress" data-width="92"></div>
+                        </div>
                     </div>
-                    <p>Certificate of recognition at Polestar</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <div class="contact-container">
-                <div class="section-header">
-                    <h2>Get in touch</h2>
+            </section>
+            
+            <!-- Tools & Technologies Section -->
+            <section class="sidebar-section fade-in" aria-labelledby="tools-heading">
+                <h2 id="tools-heading" class="section-title-sidebar">
+                    <i class="fas fa-tools" aria-hidden="true"></i>
+                    Tools & Technologies
+                </h2>
+                <div class="tools-toggle" role="tablist" aria-label="Toggle between tool categories">
+                    <button class="toggle-btn active" role="tab" aria-selected="true" data-category="all" id="tab-all" aria-controls="tools-panel">All</button>
+                    <button class="toggle-btn" role="tab" aria-selected="false" data-category="crm" id="tab-crm" aria-controls="tools-panel">CRM</button>
+                    <button class="toggle-btn" role="tab" aria-selected="false" data-category="data" id="tab-data" aria-controls="tools-panel">Data</button>
+                    <button class="toggle-btn" role="tab" aria-selected="false" data-category="email" id="tab-email" aria-controls="tools-panel">Email</button>
                 </div>
-                <p class="contact-intro">Open to growth-focused sales and lead-gen roles, freelance lead-gen projects, and collaboration with product/sales teams.</p>
-                
-                <div class="contact-grid">
-                    <a href="mailto:dixitshubham75@gmail.com" class="contact-method">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
-                        </svg>
-                        <h4>Email</h4>
-                        <span>dixitshubham75@gmail.com</span>
-                    </a>
-                    <a href="tel:+918851617334" class="contact-method">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                        </svg>
-                        <h4>Phone</h4>
-                        <span>+91 8851617334</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/shubham-dixit-7b186a198/" target="_blank" rel="noopener noreferrer" class="contact-method">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                            <rect x="2" y="9" width="4" height="12"/>
-                            <circle cx="4" cy="4" r="2"/>
-                        </svg>
-                        <h4>LinkedIn</h4>
-                        <span>linkedin.com/in/shubham-dixit</span>
-                    </a>
+                <div class="tools-chips" id="tools-panel" role="tabpanel">
+                    <span class="tool-chip" data-category="data">Lusha</span>
+                    <span class="tool-chip" data-category="data">Apollo</span>
+                    <span class="tool-chip" data-category="data">Sales Navigator</span>
+                    <span class="tool-chip" data-category="data">EasyLeads</span>
+                    <span class="tool-chip" data-category="data">Seamless.ai</span>
+                    <span class="tool-chip" data-category="email">Quick Email Verification</span>
+                    <span class="tool-chip" data-category="email">EmailListVerify</span>
+                    <span class="tool-chip" data-category="data">Lead411</span>
+                    <span class="tool-chip" data-category="data">Skarpp.io</span>
+                    <span class="tool-chip" data-category="email">Gmass</span>
+                    <span class="tool-chip" data-category="email">saleshandy</span>
+                    <span class="tool-chip" data-category="all">Microsoft Office</span>
+                    <span class="tool-chip" data-category="crm">Salesforce</span>
+                    <span class="tool-chip" data-category="crm">Zoho CRM</span>
+                    <span class="tool-chip" data-category="crm">HubSpot</span>
+                    <span class="tool-chip" data-category="email">Mailchimp</span>
+                    <span class="tool-chip" data-category="email">SendinBlue</span>
+                    <span class="tool-chip" data-category="email">Zero bounce</span>
+                    <span class="tool-chip" data-category="email">E-mail Tester</span>
                 </div>
-
-                <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="your@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required placeholder="Tell me about your project or opportunity..."></textarea>
-                    </div>
-                    <button type="submit" class="form-submit">Send Message</button>
-                    <div class="form-success" id="formSuccess">Thanks — I'll respond within 48 hours.</div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <p class="footer-text">© <span id="year"></span> Shubham Dixit — Built with an aesthetic, minimal design.</p>
-            <div class="footer-links">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="https://www.linkedin.com/in/shubham-dixit-7b186a198/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                        <rect x="2" y="9" width="4" height="12"/>
-                        <circle cx="4" cy="4" r="2"/>
-                    </svg>
+            </section>
+            
+            <!-- Quote Section -->
+            <section class="sidebar-section quote-section fade-in" aria-labelledby="quote-heading">
+                <h2 id="quote-heading" class="sr-only">Favorite Quote</h2>
+                <blockquote class="favorite-quote">
+                    <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                    <p>"All our dreams can come true if we have the courage to pursue them."</p>
+                </blockquote>
+            </section>
+            
+            <!-- Download Resume Button -->
+            <div class="sidebar-actions fade-in">
+                <a href=" https://raw.githubusercontent.com/shubhamdixit926-lang/Shubham-Dixit/9941a96d49a7402a1f22ef2ea0454d1254c8ef55/ShubhamDixit-%20Resume-%20BDE.pdf" download class="btn btn-primary" aria-label="Download Resume PDF">
+                    <i class="fas fa-download" aria-hidden="true"></i>
+                    Download Resume (PDF)
                 </a>
             </div>
-        </div>
-    </footer>
-
+        </aside>
+        
+        <!-- Main Content -->
+        <main id="main-content" class="main-content" role="main">
+            <!-- Summary Section -->
+            <section class="content-section fade-in" aria-labelledby="summary-heading">
+                <h2 id="summary-heading" class="section-title">
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                    Summary
+                </h2>
+                <div class="card summary-card">
+                    <p>As a Senior Business Development Representative with over 5.5 years of experience, I specialize in lead generation for both international and domestic markets. My role involves setting up meetings and establishing initial interactions with clients. I work closely with the sales team to drive growth and achieve business objectives. I have developed a strong understanding of the sales funnel, from attracting and nurturing prospects to successfully converting them into long-term customers.</p>
+                </div>
+            </section>
+            
+            <!-- Work Experience Section -->
+            <section class="content-section fade-in" aria-labelledby="experience-heading">
+                <h2 id="experience-heading" class="section-title">
+                    <i class="fas fa-briefcase" aria-hidden="true"></i>
+                    Work Experience
+                </h2>
+                
+                <div class="timeline" role="list" aria-label="Work experience timeline">
+                    <!-- RDSolutions -->
+                    <article class="timeline-item card" role="listitem">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <button class="timeline-header" aria-expanded="false" aria-controls="exp-rdsolutions">
+                            <div class="timeline-header-content">
+                                <h3 class="company-name">RDSolutions</h3>
+                                <span class="role-title">Senior Business Development Executive</span>
+                                <span class="date-range">
+                                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    13th May 2025 – Present
+                                </span>
+                            </div>
+                            <i class="fas fa-chevron-down expand-icon" aria-hidden="true"></i>
+                        </button>
+                        <div class="timeline-content" id="exp-rdsolutions" hidden>
+                            <ul class="experience-list">
+                                <li>Identify, research, and generate high-quality leads for RDSolutions' services including Web Scraping, Staffing, AI/ML, and Data Engineering.</li>
+                                <li>Generate leads through email outreach, cold calling, LinkedIn and other digital channels.</li>
+                                <li>Build and maintain a strong pipeline of qualified prospects spanning all industries targeted by RDSolutions.</li>
+                                <li>Generate and qualify leads while effectively promoting RDSolutions' product offerings such as Intrics and InfoQuest.</li>
+                                <li>Client Engagement & Requirement Gathering: Initiate conversations with potential customers, understand their pain points, and gather detailed requirements.</li>
+                                <li>Qualify prospects based on budget, timeline, and project scope.</li>
+                                <li>Maintain continuous engagement with potential clients and nurture relationships to move them toward a sales conversation.</li>
+                                <li>Appointment Setting & Sales Coordination: Schedule appointments, demos, and discovery call for the sales team.</li>
+                                <li>Ensure seamless handover of qualified leads by sharing detailed lead insights.</li>
+                                <li>Collaborate closely with the sales team to ensure strong communication and follow-up until closure.</li>
+                                <li>CRM Management & Reporting: Update lead information, communication logs, and pipeline status in HubSpot.</li>
+                                <li>Track overall lead activity, follow-ups, connection attempts, and conversions.</li>
+                                <li>Provide weekly and monthly reports on lead quality, volume, and performance metrics.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <!-- NextZen Minds -->
+                    <article class="timeline-item card" role="listitem">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <button class="timeline-header" aria-expanded="false" aria-controls="exp-nextzen">
+                            <div class="timeline-header-content">
+                                <h3 class="company-name">NextZen Minds</h3>
+                                <span class="role-title">Senior Business Development Executive</span>
+                                <span class="date-range">
+                                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    12th June 2024 – 1st April 2025
+                                </span>
+                            </div>
+                            <i class="fas fa-chevron-down expand-icon" aria-hidden="true"></i>
+                        </button>
+                        <div class="timeline-content" id="exp-nextzen" hidden>
+                            <ul class="experience-list">
+                                <li>Generate high-quality leads for software development and staff augmentation services.</li>
+                                <li>Generate leads through email, LinkedIn, and cold calling.</li>
+                                <li>Manage the lead generation process to ensure an efficient workflow.</li>
+                                <li>Conduct research on accounts to identify key decision-makers.</li>
+                                <li>Identify potential customers interested in mobile app/web development, AI/ML, cloud security, SaaS development, and other services.</li>
+                                <li>Nurture client relationships by understanding their requirements and needs.</li>
+                                <li>Pass qualified leads to appropriate sales personnel for further development and closure.</li>
+                                <li>Collaborate closely with the sales team to ensure seamless communication and smooth transitions.</li>
+                                <li>Proficient in using corporate productivity tools including Lusha, Apollo, Sales Navigator, Easy Leads, Seamless.ai, Salesforce, Zoho CRM, and others.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <!-- Recam Solutions -->
+                    <article class="timeline-item card" role="listitem">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <button class="timeline-header" aria-expanded="false" aria-controls="exp-recam">
+                            <div class="timeline-header-content">
+                                <h3 class="company-name">Recam Solutions</h3>
+                                <span class="role-title">Senior Lead Generation Executive</span>
+                                <span class="date-range">
+                                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    1st Nov 2023 – 29th February 2024
+                                </span>
+                            </div>
+                            <i class="fas fa-chevron-down expand-icon" aria-hidden="true"></i>
+                        </button>
+                        <div class="timeline-content" id="exp-recam" hidden>
+                            <ul class="experience-list">
+                                <li>Generate new leads by conducting market research, E-marketing, LinkedIn.</li>
+                                <li>Managing the Lead Generation process.</li>
+                                <li>Identify potential customers interested in LMS solutions.</li>
+                                <li>Engage with prospects to understand their requirements and pain points.</li>
+                                <li>Research accounts and identify key decision-makers.</li>
+                                <li>Follow up with clients regularly and establish a proper sales pipeline.</li>
+                                <li>Familiar with data extraction tools such as Lusha, Apollo, Sales Navigator, Easy Leads and Seamless.ai.</li>
+                                <li>Familiar with email marketing and CRM tools such as Gmass, Mailchimp and Zoho CRM.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <!-- ImpactQA -->
+                    <article class="timeline-item card" role="listitem">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <button class="timeline-header" aria-expanded="false" aria-controls="exp-impactqa">
+                            <div class="timeline-header-content">
+                                <h3 class="company-name">ImpactQA</h3>
+                                <span class="role-title">Business Development Executive</span>
+                                <span class="date-range">
+                                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    17th Jan 2023 – 27th October 2023
+                                </span>
+                            </div>
+                            <i class="fas fa-chevron-down expand-icon" aria-hidden="true"></i>
+                        </button>
+                        <div class="timeline-content" id="exp-impactqa" hidden>
+                            <ul class="experience-list">
+                                <li>Generating high-quality leads across various industries and channels.</li>
+                                <li>Driving sales campaigns with the help of E-Marketing tools.</li>
+                                <li>Managing the Lead Generation process.</li>
+                                <li>Research accounts and identify key decision-makers.</li>
+                                <li>Proficient with corporate productivity tools.</li>
+                                <li>Identify potential customers interested in Software testing services.</li>
+                                <li>Engage with prospects to understand their requirements and pain points.</li>
+                                <li>Pass qualified leads to the appropriate sales person for further development and closure.</li>
+                                <li>Collaborate with the sales team to ensure seamless communication.</li>
+                                <li>Well-versed with data extraction tools such as Lusha, Apollo, Sales Navigator, Easy Leads and Seamless.ai.</li>
+                                <li class="achievement-highlight">
+                                    <i class="fas fa-trophy" aria-hidden="true"></i>
+                                    Achievement: Received a spot award from ImpactQA for generating 4 Enterprise Qualified Leads in one month.
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <!-- Polestar IT Solutions -->
+                    <article class="timeline-item card" role="listitem">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <button class="timeline-header" aria-expanded="false" aria-controls="exp-polestar">
+                            <div class="timeline-header-content">
+                                <h3 class="company-name">Polestar IT Solutions</h3>
+                                <span class="role-title">Business Development Representative</span>
+                                <span class="date-range">
+                                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                    1st Apr 2020 – 10th Oct 2022
+                                </span>
+                            </div>
+                            <i class="fas fa-chevron-down expand-icon" aria-hidden="true"></i>
+                        </button>
+                        <div class="timeline-content" id="exp-polestar" hidden>
+                            <ul class="experience-list">
+                                <li>Research accounts and identify key decision-makers.</li>
+                                <li>Proficient with corporate productivity tools.</li>
+                                <li>Experience in Lead Generation in IT Sales exposure in IT Services like Data analytics, BI consulting and cloud.</li>
+                                <li>Managing the Lead Generation process.</li>
+                                <li>Comfortable with data mining tools such as Lusha, Apollo, Sales Navigator, and Seamless.ai.</li>
+                                <li>Well-versed with email verification tools like Zero bounce, E-mail Tester, Quick e-mail verification.</li>
+                                <li>Well-versed with email marketing and CRM tools such as Gmass, SendinBlue, Mailchimp and Zoho CRM.</li>
+                                <li class="achievement-highlight">
+                                    <i class="fas fa-trophy" aria-hidden="true"></i>
+                                    Achievement: Received a Certificate of recognition throughout the year from Polestar.
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <!-- Internship Section -->
+            <section class="content-section fade-in" aria-labelledby="internship-heading">
+                <h2 id="internship-heading" class="section-title">
+                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    Internship
+                </h2>
+                <div class="card internship-card">
+                    <div class="internship-header">
+                        <h3 class="company-name">Polestar Solution and Services (NOIDA)</h3>
+                        <span class="date-range">
+                            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                            25th Nov 2019 to 1st April 2020
+                        </span>
+                    </div>
+                    <p class="role-title">Intern at International Sales Team</p>
+                    <p class="internship-role">Research Analyst in International Sales</p>
+                </div>
+            </section>
+            
+            <!-- Education Section -->
+            <section class="content-section fade-in" aria-labelledby="education-heading">
+                <h2 id="education-heading" class="section-title">
+                    <i class="fas fa-university" aria-hidden="true"></i>
+                    Education
+                </h2>
+                <div class="education-grid">
+                    <article class="card education-card">
+                        <div class="education-year">2018–2021</div>
+                        <h3 class="education-degree">B.com</h3>
+                        <p class="education-institution">MGCGV, Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya, Panna</p>
+                    </article>
+                    
+                    <article class="card education-card">
+                        <div class="education-year">2018–2020</div>
+                        <h3 class="education-degree">AAIP</h3>
+                        <p class="education-institution">UGC Arena Animation, Delhi</p>
+                    </article>
+                    
+                    <article class="card education-card">
+                        <div class="education-year">2016</div>
+                        <h3 class="education-degree">12th</h3>
+                        <p class="education-institution">CBSE, National Public School, Ghaziabad</p>
+                    </article>
+                    
+                    <article class="card education-card">
+                        <div class="education-year">2013</div>
+                        <h3 class="education-degree">10th</h3>
+                        <p class="education-institution">CBSE, National Public School, Ghaziabad</p>
+                    </article>
+                </div>
+            </section>
+            
+            <!-- Achievements Section -->
+            <section class="content-section fade-in" aria-labelledby="achievements-heading">
+                <h2 id="achievements-heading" class="section-title">
+                    <i class="fas fa-award" aria-hidden="true"></i>
+                    Achievements
+                </h2>
+                <div class="card achievements-card">
+                    <ul class="achievements-list" role="list">
+                        <li>
+                            <i class="fas fa-certificate" aria-hidden="true"></i>
+                            <span>ADM Partner Certified Sales Professional (MFCSP)</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-medal" aria-hidden="true"></i>
+                            <span>Received a Certificate of recognition throughout the year</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                            <span>Generated high-grade leads for the company</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <span>Appreciated by AVP of Sales for consistent performance throughout the year</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-trophy" aria-hidden="true"></i>
+                            <span>Received a spot award from ImpactQA for generating 4 Enterprise Qualified Leads in one month</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Contact Form Section -->
+            <section class="content-section fade-in" aria-labelledby="contact-form-heading">
+                <h2 id="contact-form-heading" class="section-title">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                    Contact
+                </h2>
+                <div class="card contact-card">
+                    <p class="contact-intro">Let's talk — reach me at <a href="mailto:dixitshubham75@gmail.com">dixitshubham75@gmail.com</a> or call <a href="tel:+918851617334">8851617334</a></p>
+                    
+                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/your-form-id" method="POST" aria-describedby="form-description">
+                        <p id="form-description" class="sr-only">Fill out this form to send a message to Shubham Dixit</p>
+                        
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name <span class="required" aria-label="required">*</span></label>
+                            <input type="text" id="name" name="name" class="form-input" required aria-required="true" autocomplete="name">
+                            <span class="form-error" role="alert" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email <span class="required" aria-label="required">*</span></label>
+                            <input type="email" id="email" name="email" class="form-input" required aria-required="true" autocomplete="email">
+                            <span class="form-error" role="alert" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message <span class="required" aria-label="required">*</span></label>
+                            <textarea id="message" name="message" class="form-input form-textarea" rows="5" required aria-required="true"></textarea>
+                            <span class="form-error" role="alert" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                Send Message
+                            </button>
+                            <a href="mailto:dixitshubham75@gmail.com?subject=Website%20Contact%20from%20Resume%20Site" class="btn btn-secondary">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                Email Shubham
+                            </a>
+                        </div>
+                        
+                        <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top" hidden>
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- Optional: Google Analytics Placeholder -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
-        // Set current year
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Header scroll effect
-        const header = document.getElementById('header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile menu toggle
-        function toggleMobileMenu() {
-            const mobileNav = document.getElementById('mobileNav');
-            mobileNav.classList.toggle('active');
-        }
-
-        // Form submission
-        function handleSubmit(event) {
-            event.preventDefault();
-            const form = document.getElementById('contactForm');
-            const success = document.getElementById('formSuccess');
-            
-            // Simulate form submission
-            success.style.display = 'block';
-            form.reset();
-            
-            setTimeout(() => {
-                success.style.display = 'none';
-            }, 5000);
-        }
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#') {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                }
-            });
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.experience-card, .achievement-item, .tool-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
     </script>
+    -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const fadeElements = document.querySelectorAll(".fade-in");
+        fadeElements.forEach(el => el.classList.add("visible"));
+    });
+</script>
 </body>
 </html>
